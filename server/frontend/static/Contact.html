@@ -29,8 +29,301 @@
           </div>
         </div>
       </nav>
-      <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-        <h1>Contact Us</h1>
-            Call us at +2542385735365 or email us at dealerships@gmail.com
+      <style>
+        .contact-container {
+          width: 90%;
+          max-width: 1000px;
+          margin: auto;
+          margin-top: 4%;
+          margin-bottom: 5%;
+        }
+        
+        .contact-header {
+          text-align: center;
+          margin-bottom: 3%;
+          color: #333;
+        }
+        
+        .contact-header h1 {
+          font-weight: 700;
+          font-size: 2.5rem;
+          margin-bottom: 0.5rem;
+          color: darkturquoise;
+        }
+        
+        .contact-header p {
+          font-size: 1.1rem;
+          color: #666;
+        }
+        
+        .contact-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem;
+          margin-bottom: 3%;
+        }
+        
+        .info-section {
+          background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+          padding: 2rem;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-section h3 {
+          color: darkturquoise;
+          margin-bottom: 1.5rem;
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+        
+        .info-item {
+          margin-bottom: 1.5rem;
+          display: flex;
+          align-items: flex-start;
+        }
+        
+        .info-icon {
+          color: darkturquoise;
+          font-weight: 700;
+          margin-right: 1rem;
+          font-size: 1.2rem;
+          min-width: 30px;
+        }
+        
+        .info-text {
+          color: #333;
+          line-height: 1.6;
+        }
+        
+        .info-text a {
+          color: darkturquoise;
+          text-decoration: none;
+        }
+        
+        .info-text a:hover {
+          text-decoration: underline;
+        }
+        
+        .contact-form-section {
+          background: white;
+          padding: 2rem;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form-section h3 {
+          color: darkturquoise;
+          margin-bottom: 1.5rem;
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+        
+        .form-group {
+          margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+          display: block;
+          margin-bottom: 0.5rem;
+          color: #333;
+          font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+          width: 100%;
+          padding: 0.75rem;
+          border: 2px solid #e0e0e0;
+          border-radius: 5px;
+          font-family: inherit;
+          font-size: 1rem;
+          transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+          outline: none;
+          border-color: darkturquoise;
+        }
+        
+        .form-group textarea {
+          resize: vertical;
+          min-height: 120px;
+        }
+        
+        .submit-btn {
+          background-color: darkturquoise;
+          color: white;
+          padding: 0.75rem 2rem;
+          border: none;
+          border-radius: 5px;
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          width: 100%;
+        }
+        
+        .submit-btn:hover {
+          background-color: #008080;
+        }
+        
+        .hours-section {
+          background: linear-gradient(135deg, #c3cfe2 0%, #f5f7fa 100%);
+          padding: 2rem;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hours-section h3 {
+          color: darkturquoise;
+          margin-bottom: 1.5rem;
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+        
+        .hours-item {
+          display: flex;
+          justify-content: space-between;
+          padding: 0.8rem 0;
+          border-bottom: 1px solid #ddd;
+          color: #333;
+        }
+        
+        .hours-item:last-child {
+          border-bottom: none;
+        }
+        
+        .day {
+          font-weight: 500;
+        }
+        
+        .time {
+          color: darkturquoise;
+          font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+          .contact-content {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+          
+          .contact-header h1 {
+            font-size: 2rem;
+          }
+        }
+      </style>
+      
+      <div class="contact-container">
+        <div class="contact-header">
+          <h1>Get In Touch</h1>
+          <p>We'd love to hear from you. Contact us for any inquiries or to schedule a dealership visit.</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="info-section">
+            <h3>📍 Contact Information</h3>
+            
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-text">
+                <strong>Phone:</strong><br>
+                <a href="tel:+2542385735365">+254 238 573 5365</a>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <div class="info-text">
+                <strong>Email:</strong><br>
+                <a href="mailto:dealerships@gmail.com">dealerships@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">🏢</div>
+              <div class="info-text">
+                <strong>Address:</strong><br>
+                123 Automotive Boulevard<br>
+                Nairobi, Kenya 12345
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">💬</div>
+              <div class="info-text">
+                <strong>Live Chat:</strong><br>
+                Available on business days<br>
+                9:00 AM - 6:00 PM (EAT)
+              </div>
+            </div>
+          </div>
+          
+          <div class="hours-section">
+            <h3>🕒 Business Hours</h3>
+            <div class="hours-item">
+              <span class="day">Monday</span>
+              <span class="time">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="hours-item">
+              <span class="day">Tuesday</span>
+              <span class="time">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="hours-item">
+              <span class="day">Wednesday</span>
+              <span class="time">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="hours-item">
+              <span class="day">Thursday</span>
+              <span class="time">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="hours-item">
+              <span class="day">Friday</span>
+              <span class="time">9:00 AM - 7:00 PM</span>
+            </div>
+            <div class="hours-item">
+              <span class="day">Saturday</span>
+              <span class="time">10:00 AM - 4:00 PM</span>
+            </div>
+            <div class="hours-item">
+              <span class="day">Sunday</span>
+              <span class="time">Closed</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-section">
+          <h3>✉️ Send us a Message</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+254...">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" placeholder="Your inquiry topic" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Please share your message with us..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
       </div>
 </div>
