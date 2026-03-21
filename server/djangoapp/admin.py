@@ -6,18 +6,21 @@ from .models import CarMake, CarModel
 
 # CarModelInline class
 class CarModelInline(admin.TabularInline):
-	model = CarModel
-	extra = 1
+    model = CarModel
+    extra = 1
+
 
 # CarModelAdmin class
 class CarModelAdmin(admin.ModelAdmin):
-	list_display = ('name', 'type', 'year', 'car_make', 'dealer_id')
-	list_filter = ('type', 'year', 'car_make')
+    list_display = ('name', 'type', 'year', 'car_make', 'dealer_id')
+    list_filter = ('type', 'year', 'car_make')
+
 
 # CarMakeAdmin class with CarModelInline
 class CarMakeAdmin(admin.ModelAdmin):
-	list_display = ('name', 'description')
-	inlines = [CarModelInline]
+    list_display = ('name', 'description')
+    inlines = [CarModelInline]
+
 
 # Register models here
 admin.site.register(CarMake, CarMakeAdmin)
