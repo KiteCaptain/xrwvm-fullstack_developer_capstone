@@ -99,7 +99,9 @@ def get_dealer_reviews(request, dealer_id):
 
         if reviews:
             for review_detail in reviews:
-                sentiment_data = analyze_review_sentiments(review_detail['review'])
+                sentiment_data = analyze_review_sentiments(
+                    review_detail['review']
+                )
                 review_detail['sentiment'] = sentiment_data.get(
                     'sentiment',
                     'neutral',
